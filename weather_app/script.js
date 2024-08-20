@@ -29,7 +29,7 @@ const getWeatherData = async (city) => {
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`
   );
   if (!response.ok) {
-    throw new Error(`could not fetch weeather data`);
+    throw new Error(`could not fetch weather data`);
   }
   return await response.json();
 };
