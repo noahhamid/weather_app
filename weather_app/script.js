@@ -17,7 +17,7 @@ search.addEventListener("click", async (event) => {
       const weatherData = await getWeatherData(city);
       displayLocation(weatherData);
     } catch (error) {
-      console.log(error);
+      console.error(error);
       errorDisplay("Error fetching data. Please try again.");
     }
   } else {
